@@ -434,7 +434,7 @@ if not _env.LoadedFarm then
   end)
 end
 
-local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV5/main/Source.Lua"))()
+local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = redzlib:MakeWindow({ Title = "Xyris Hub : Meme Sea", SubTitle = "by Xyris Hub Team, SaveFolder = "xyris-MemeSea.json" })
 Window:AddMinimizeButton({
   Button = { Image = "rbxassetid://105778388057716", BackgroundTransparency = 0 },
