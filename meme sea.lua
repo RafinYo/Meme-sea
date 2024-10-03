@@ -1,4 +1,5 @@
 repeat wait() until game:IsLoaded()
+
 pcall(function()
     repeat
         wait()
@@ -7,12 +8,12 @@ pcall(function()
         end
     until not game:GetService("Players").LocalPlayer.PlayerGui.LoadingGui.Enabled
 end)
-game.StarterGui:SetCore({
-    "SendNotification",
-        Title = "Xyris Hub",
-        Text = "Loading",
-        Duration = 5
-    })
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Xyris Hub",
+    Text = "Loading",
+    Duration = 5
+})
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local player = game.Players.LocalPlayer
 local L1 = Instance.new("ScreenGui")
